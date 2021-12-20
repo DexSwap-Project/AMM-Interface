@@ -13,8 +13,6 @@ Decentralized Protocol Optimizer for Multiple Exchanges
  <img src="https://github.com/Agin-DropDisco/HARMONY_ONE/blob/main/flow_staker%402x.png">
  </p>
  
-
-
 ## Address Harmony Mainnet
 
 DexSwap Factory:  
