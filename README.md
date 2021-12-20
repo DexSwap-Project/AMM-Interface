@@ -1,9 +1,3 @@
-
-### **DEMO [Harmony Mainnet]** **[https://harmony-dexswap.netlify.app/](https://harmony-dexswap.netlify.app)**
-
-### **VIDEO WORKFLOW** **https://www.youtube.com/watch?v=swRyarDEzyk**
-
-
 # DexSwap Finance ($DEXS)
 
 Decentralized Protocol Optimizer for Multiple Exchanges
