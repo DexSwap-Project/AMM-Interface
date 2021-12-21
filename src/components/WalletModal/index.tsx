@@ -227,7 +227,7 @@ export default function WalletModal({
               DEXSWAP 
           </TYPE.body>
           <TYPE.body fontWeight={700} fontSize="10px" color="text5" letterSpacing="1px" marginBottom="8px">
-          HARMONY HACKATHON 
+          HARMONY NETWORK 
           </TYPE.body>
           <TYPE.body fontWeight={700} fontSize="9px" color="text5" letterSpacing="2px">
             :: AGIN DROPDISCO ::

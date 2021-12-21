@@ -5,7 +5,7 @@ import Option from './Option'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useCloseModals, useWalletSwitcherPopoverToggle } from '../../state/application/hooks'
 
-// import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import HarmonyLogo from '../../assets/images/harmony.webp'
 import Popover from '../Popover'
 import { useActiveWeb3React } from '../../hooks'
@@ -110,11 +110,11 @@ export default function NetworkSwitcherPopover({ children}: NetworkSwitcherPopov
               />
               <Option
                 onClick={() => {
-                  // selectNetwork(ChainId.HARMONY_TESTNET)
+                  selectNetwork(ChainId.RINKEBY)
                 }}
-                header={'TESTNET'}
-                logoSrc={HarmonyLogo}
-                comingSoon
+                header={'RINKEBY'}
+                logoSrc={EthereumLogo}
+                disabled={chainId === ChainId.RINKEBY}
               />
             </OptionGrid>
             <ChangeWalletButton onClick={toggleWalletSwitcherPopover}>Change wallet</ChangeWalletButton>

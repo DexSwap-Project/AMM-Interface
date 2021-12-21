@@ -267,7 +267,6 @@ function Header({ history }: { history: any }) {
               </Box>
             </AbsoluteComingSoonBadgeFlex>
           </StyledNavLink>
-{/* 
           <StyledNavLink
             id="governanve-nav-link"
             to="/governance"
@@ -279,7 +278,7 @@ function Header({ history }: { history: any }) {
                 <Badge label="COMING SOON" />
               </Box>
             </AbsoluteComingSoonBadgeFlex>
-          </StyledNavLink> */}
+          </StyledNavLink>
           <MoreLinksIcon>
             <MobileOptions history={history} />
           </MoreLinksIcon>
