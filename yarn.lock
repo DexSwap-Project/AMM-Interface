@@ -6352,7 +6352,7 @@ detect-port-alt@1.1.6:
 
 "dexswap-sdk@git://github.com/Agin-DropDisco/dexs-sdk.git#harmony-sdk":
   version "0.1.1"
-  resolved "git://github.com/Agin-DropDisco/dexs-sdk.git#58f20f768226f56fc0bbccf1b0d77e705f222df9"
+  resolved "git://github.com/Agin-DropDisco/dexs-sdk.git#caa1d386027df2b091007688c1aa8d7477f9a2a7"
   dependencies:
     "@makerdao/multicall" "^0.11.0"
     big.js "^5.2.2"
