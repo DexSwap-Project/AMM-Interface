@@ -7,7 +7,7 @@ import styled from 'styled-components/macro'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useNativeCurrencyBalances } from '../../state/wallet/hooks'
-
+import { ExternalLink } from '../../theme'
 import Settings from '../Settings'
 
 import Row, { RowFixed, RowFlat } from '../Row'
@@ -107,6 +107,40 @@ const Title = styled.a`
   :hover {
     cursor: pointer;
   }
+`
+
+const StyledExternalLink = styled(ExternalLink)`
+align-items: center;
+background-color: #262637;
+border: solid 2px transparent;
+color: #C0BAF6;
+border-radius: 12px;
+white-space: nowrap;
+box-shadow: inset rgb(15 10 12) -8px 8px 16px 0px, rgb(255 255 255 / 8%) 8px -8px 16px 0px;
+width: 150px;
+justify-content: center;
+text-align: center;
+border-right: 1px solid #ff5722 !important;
+border-left: 1px solid #ff5722 !important;
+position: relative;
+margin: 0px 12px;
+cursor: pointer;
+font-weight: 400;
+font-size: 16px;
+line-height: 19.5px;
+color: ${({ theme }) => theme.white};
+
+&.active {
+  font-weight: 900;
+  color: #00bcd4;
+}
+
+${({ theme }) => theme.mediaWidth.upToLarge`
+  margin: 0 8px;
+`};
+${({ theme }) => theme.mediaWidth.upToSmall`
+  display: none;
+`};
 `
 
 export const StyledNavLink = styled(NavLink)`
@@ -267,6 +301,14 @@ function Header({ history }: { history: any }) {
               </Box>
             </AbsoluteComingSoonBadgeFlex>
           </StyledNavLink>
+          <StyledExternalLink id="istock-nav-link" href={`https://istock-dev.netlify.app`}>
+            {t('ISTOCK')}
+            <AbsoluteComingSoonBadgeFlex justifyContent="center" width="100%">
+              <Box>
+                <Badge label="Testnet" />
+              </Box>
+            </AbsoluteComingSoonBadgeFlex>
+          </StyledExternalLink>
           <StyledNavLink
             id="governanve-nav-link"
             to="/governance"
