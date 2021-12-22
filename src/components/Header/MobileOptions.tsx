@@ -7,6 +7,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import Popover from '../Popover'
 import { Triangle } from 'react-feather'
+import { ExternalLink } from '../../theme'
 
 const StyledPopover = styled(Popover)`
   padding: 22px;
@@ -26,6 +27,23 @@ const ListItem = styled.li`
     margin-top: 28px;
   }
 `;
+
+const StyledExternalLink = styled(ExternalLink)`
+display: block;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: ${({ theme }) => theme.text2};
+cursor: pointer;
+outline: none;
+
+&.active {
+  font-weight: 700;
+  color: ${({ theme }) => theme.white};
+}
+`
 
 const StyledNavLink = styled(NavLink)`
   display: block;
@@ -134,6 +152,11 @@ export default function MobileOptions({ history }: { history: any }) {
                   {t('bridge')}
                 </StyledNavLink>
               </ListItem>
+              <ListItem>
+          <StyledExternalLink id="istock-nav-link" href={`https://istock-dev.netlify.app`}>
+            {t('ISTOCK')}
+          </StyledExternalLink>
+          </ListItem>
               <ListItem>
               <StyledNavLink
                   id="governance-nav-link"
