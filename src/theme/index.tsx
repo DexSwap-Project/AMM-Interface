@@ -285,6 +285,7 @@ body::-webkit-scrollbar {
   margin-bottom: 25px;
   background-color: #ff5722 !important;
   background-image: none;
+  padding: 0;
 }
 #bridge-currency-input .pmTWa {
   border: none;
