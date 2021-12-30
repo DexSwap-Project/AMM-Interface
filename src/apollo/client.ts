@@ -17,7 +17,7 @@ export const subgraphClients: { [chainId in ChainId]?: ApolloClient<NormalizedCa
     cache: new InMemoryCache()
   }),
   [ChainId.HARMONY_TESTNET]: new ApolloClient({
-    uri: 'https://api.thegraph.com/subgraphs/name/agin-dropdisco/dexswap-rinkeby-gin',
+    uri: 'https://graph.t.hmny.io/subgraphs/name/agin-dropdisco/test_gin5',
     cache: new InMemoryCache()
   })
 }
